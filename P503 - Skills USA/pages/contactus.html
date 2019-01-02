@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ConnectSafely.org</title>
+	<script type="text/javascript" href="../scripts/validate.js">
+
+		function validateResponse(){
+			
+			var form = document.getElementById("contactForm");
+			var name = form.name.value;
+			var email = form.email.value;
+			var message = form.message.value;
+
+			if  (!name || !email || !message){
+				alert("Please fill out each field to submit.");
+
+			}else{
+				alert("Your message has been submitted. Thank you.");
+			}
+
+		}
+
+
+	</script>
+	<link rel="stylesheet" href="../css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+
+	<meta charset="utf-8">
+</head>
+<body>
+<nav class="nav">
+	
+	<img src="../images/logo.png">
+
+	<a href="../index.html">Home</a>
+	<a href="about.html">About</a>
+	<a href="tipsandadvice.html">Tips & Advice</a>
+	<a href="saferinternetday.html">Safer Internet Day</a>
+	<a href="contactus.html">Contact Us</a>
+
+</nav>
+	<div class="content">
+	<h1 class="title"><center>Contact Us</center></h1>
+
+	<img class ="headerimage" src="../images/takeAction.jpg">
+
+	<p>Want to take action? Contact us using the form below.</p>
+
+
+
+	<form id="contactForm" onsubmit="validateResponse()">
+		
+		Name: <input type="text" name="name">
+		Email: <input type="text" name="email" >
+		Message: <textarea rows="20" cols="20" name="message"></textarea>
+
+		<input id="submit" type="submit" name="Submit">
+		<input type="reset" name="Reset">
+
+	</form>
+
+<img class ="headerimage" src="../images/steps.png">
+	</div>
+
+<footer>
+<p>Copyright 2018. All Rights Reserved.</p> 
+
+
+<div class ="socialmedia">
+	<p>Social Media:    </p>
+	<a href="https://www.facebook.com"><img src="../images/facebook.png"></a>
+	<a href="https://www.twitter.com"><img src="../images/twitter.png"></a>
+	<a href="https://www.youtube.com"><img src="../images/youtube.png"></a>
+	<a href="https://www.rss.com"><img src="../images/rss.png"></a>
+
+</div>
+</footer>
+
+
+</body>
+</html>

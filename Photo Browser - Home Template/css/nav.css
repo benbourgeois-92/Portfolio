@@ -1,0 +1,83 @@
+
+@media screen and (min-width: 965px) {
+
+	nav{
+		background-color: #2D313D;
+		height: 100%;
+		
+		display: flex;
+		flex-direction: column;
+		width: 60px;
+		align-items: center;
+		justify-content: space-between;
+		position: fixed;
+	    z-index: 1;
+
+	}
+
+	nav i{
+		color: #555C66;
+		padding: 20px;
+		
+	}
+
+	nav i:hover{
+		background-color: #F74D7A;
+		color: white;
+	}
+	.sep{
+		height: 56px;
+		width: 97%;
+		background-color: 	#282A36;
+		
+	}
+
+	.copyright_icon{
+		
+		
+	}
+}
+
+@media screen and (max-width: 964px) {
+
+	nav {
+		background-color: #2D313D;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		display: flex;
+		flex-direction: row;
+		height: 60px;
+		align-items: center;
+		justify-content: space-between;
+	
+
+	}
+
+	nav i{
+		color: #555C66;
+		padding: 10px;
+		
+	}
+
+	nav i:hover{
+		background-color: #F74D7A;
+		color: white;
+	}
+	.main_icons{
+		display: flex;
+		flex-direction: row;
+		
+	}
+	.sep{
+		height: 50px;
+		width:	50px;	
+	}
+	
+	.sep:hover{
+		cursor: pointer;
+		
+	}
+
+}
+

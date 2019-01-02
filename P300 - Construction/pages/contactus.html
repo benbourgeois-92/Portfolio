@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Construction Consultants General Contractors LLC</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script src="../javascript/validate.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+			$(document).ready(function(){
+			var navHeight = $("nav").outerHeight();
+			$(".main").css("margin-top", navHeight);
+			
+			$("form").hide();
+			$("form").slideDown("slow");
+			
+				$(window).resize(function(){
+			
+					var navHeight = $("nav").outerHeight();
+					$(".main").css("margin-top", navHeight);
+			
+			});
+		
+			
+		});
+</script>
+	
+</head>
+<body>
+
+<nav>
+
+	<img src="../images/ccgc-logo.jpg" height="60px;">
+	
+	<a href="../index.html">Home</a>
+	<a href="../pages/aboutus.html">About Us</a>
+	<a href="../pages/ourservices.html">Our Services</a>
+	<a href="../pages/choosingacontractor.html">Choosing a Contractor</a>
+	<a href="../pages/contactus.html">Contact Us</a>
+
+
+</nav>
+<div class="main">
+	<h1>Contact Us</h1>
+		<p>200 Yanceyville Street, Box 55<br>
+		   Greensboro, NC  27555<br>
+		   Phone: 336.555.4433<br>
+		   Fax 336.555.4434<br>
+		   www.constructionconsultants-gc.com<br>
+	<h2>For More Information, Contact Us Here</h2>
+	<form id="contactform" onsubmit="feedback()">
+	Name<br>
+	<input type="text" name="name" size="40"><br>
+	Email<br>
+	<input type="text" name="email" size="40"><br>
+	Telephone<br>
+	<input type="tel" name="phone" size="40"><br>
+	Type your message here<br>
+	<textarea name="message" rows="6" cols="30"></textarea><br>
+	
+	<input id = "button" type="submit" value="Submit">
+	
+	
+	
+	
+	</form>
+
+</div>
+	<footer>
+		<p>Copyright Construction Consultants General Contractors LLC All Rights Reserved 2018</p>
+	</footer>
+	
+</body>

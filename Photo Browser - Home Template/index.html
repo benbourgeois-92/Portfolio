@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/photo_preview.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/photo_preview.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+		
+			var photo_src_array = ["http://www.iheartberlin.de/wp-content/uploads/2016/11/BERLIN4-640x426.jpg",
+			"https://cdn4.lostateminor.com/wp-content/uploads/2016/03/Tokyo-looks-like-a-modern-day-cyberpunk-setting-in-these-photos.jpg",
+			"https://envato-shoebox-0.imgix.net/4646/3935-85f4-41a0-b940-708875ee0a15/tajak+019.jpg?w=500&h=278&fit=crop&crop=edges&auto=compress%2Cformat&s=c45335aca948555287bc4229b1632950",
+			"http://fraghero.com/wp-content/uploads/2016/09/cyberpunk.png",
+			"http://www.spoon-tamago.com/wp-content/uploads/2017/07/Derive-Tokyo-Cody-Ellingham-2.jpg",
+			"https://orig00.deviantart.net/f18b/f/2013/317/8/2/city_in_the_mountain_by_smxy666-d6u2suu.jpg",
+			"http://www.mountaincitybaptist.org/resources/Mountain%20City%20AIR.jpg",
+			"http://lh6.ggpht.com/-k_1OdYKrlGo/UBAE1IohvwI/AAAAAAAAamA/OoQt9KAJuww/la-paz-0%25255B6%25255D.jpg?imgmax=800",
+			"http://en.mxcity.mx/wp-content/uploads/2016/04/mountains-of-mexico-city-768x398.jpg",
+			"https://s-i.huffpost.com/gen/3495612/images/n-JACKSONVILLE-FLORIDA-628x314.jpg",
+			"https://media.gannett-cdn.com/29913742001/29913742001_5743815829001_5743797870001-vs.jpg?pubId=29913742001&quality=10",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3y6B-84R7mecck-j9303BMDCl2LP2KNXJYeWIqWXwxCjxkcHk",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxDf8eDtM_9zTacJtaCOH6S5JDFMhX58X34Vp2dWUEwh_EY3Rf4w",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFOib8rCmMh7da-rh6xQ7oBUov0UNwg26q-fpkmy5flWCFm_yAJw",
+			"https://psmag.com/.image/t_share/MTI3NTgyNDQxMzQ2MTQ0NzM0/timessquare1jpg.jpg",
+			"https://image.freepik.com/free-photo/taking-photos-of-the-lake_1088-88.jpg",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoCxiIktZemCPDHaV0k5fM36wxwjAkiQ3gHWcX9ZizKKc47b70Dw",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCEAZePeG-a1CfzxrsTcC-ORVAEKwkU2fa6oQEk7K7w6OobNmxVg",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS46gtLOy_Z7d2WZjmP6i_0INZZkmM6eXU8lhTQzNUVQN3xc8g",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEFfZ5bMx5FgP-xjNOUWMGifb86Zh8ZOrCu8sUysqEidGgNcKL"
+			];
+			
+			$.each(photo_src_array, function( index, value ){
+
+				var url = value;
+				var id = index;
+
+				var photo_holder = "<div class='photo_border'>";
+				var photo_holder_end = '<div class="upper_right"><i class="fa fa-bookmark-o"></i><i class="fa fa-heart-o" ></i></div></div>';
+
+				var current_photo = "<img alt = 'photo name' class = 'photo_preview' src = '" + url + "' id='" + id + "'>";
+				var final_photo = photo_holder + current_photo + photo_holder_end;
+
+
+				$(".photo_viewer").append(final_photo); 
+			});
+
+			
+			
+			
+			
+			
+			$(".copyright_icon").click(function(){
+				
+				alert("Designed by Benjamin Bourgeois. Copyright \u00A9 2018.");
+
+
+				
+			});
+
+			$(".menu_icon").click(function(){
+				$(".main_right").slideToggle();
+
+
+				
+			});
+			
+			
+			$(".sep").click(function(){
+		
+				
+
+		
+			});
+
+		});
+
+	</script>
+	<title>Website Title Placeholder</title>
+</head>
+<body>
+<nav>
+
+	<div class = "main_icons">
+		<div class="sep"><i class="material-icons">menu</i></div>
+		
+		<a href="#"><i class="material-icons" >home</i></a>
+		
+		<a href="#"><i class="material-icons" >person</i></a>
+		
+		<a href="#"><i class="material-icons" >person_pin_circle</i></a>
+		
+		<a href="#"><i class="material-icons" >cloud_download</i></a>
+		
+		<a href="#"><i class="material-icons" >show_chart</i></a>
+	</div>
+	
+	<a class="copyright_icon"href="#"><i class="material-icons">copyright</i></a>
+</nav>
+
+
+
+
+<div class="container">
+	<div class="search">
+	
+		<h1 class = "logo">Logo Placeholder</h1>
+	
+		<div class="searchbar">	
+			
+			<i class="material-icons">search</i>
+			<form action="scripts/search.js">
+			
+				<input type="text" name="search" placeholder="Type here to search photos" size = "40" autocomplete="off">
+			
+			</form>		
+		</div>
+		
+		<div class="author">
+
+			<img class="author_pic" src="https://mediamass.net/jdd/public/documents/celebrities/3503.jpg">
+
+			<p class="author_name">Username Placeholder</p>
+
+		</div>
+	
+	</div>
+
+	<div class="photo_viewer">
+		
+	</div>
+
+	
+	
+</div>
+
+</body>
+</html>

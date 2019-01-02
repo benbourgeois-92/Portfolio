@@ -1,0 +1,111 @@
+
+@media screen and (min-width: 965px) {
+
+.photo_preview{
+
+	height: 250px;
+	width: 100%;
+	border-radius: 2%;
+	
+	
+
+}
+.photo_preview:hover{
+	
+	opacity: .5;
+	
+}
+
+
+.photo_border{
+	border-radius: 2%;
+	height: 250px;
+	width: 25%;
+
+	margin: 6px;
+	position: relative;
+}
+.photo_border:hover{
+	
+	background-color: #F74D7A;
+	cursor: pointer;
+}
+
+.upper_right{
+	color: white;
+	font-size: 36px;
+	position: absolute;
+	top: 0px;
+	left: 80%;
+}
+.upper_right i:hover{
+	font-size: 40px;
+	
+	
+}
+
+.upper_right i:hover {
+	photo_preview{
+	opacity: .5;
+	}
+}
+}
+
+
+
+
+@media screen and (max-width: 964px) {
+
+
+	.photo_preview{
+
+		height: 250px;
+		width: 100%;
+		border-radius: 2%;
+		
+		
+
+	}
+	.photo_preview:hover{
+		
+		opacity: .5;
+		
+	}
+
+
+	.photo_border{
+		border-radius: 2%;
+		height: 250px;
+		width: 450px;
+
+		margin: 6px;
+		position: relative;
+	}
+	.photo_border:hover{
+		
+		background-color: #F74D7A;
+		cursor: pointer;
+	}
+
+	.upper_right{
+		color: white;
+		font-size: 36px;
+		position: absolute;
+		top: 0px;
+		left: 80%;
+	}
+	.upper_right i:hover{
+		font-size: 40px;
+		
+		
+	}
+
+	.upper_right i:hover {
+		photo_preview{
+		opacity: .5;
+		}
+
+
+}
+
+
